@@ -1,0 +1,87 @@
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the font and margin for the body */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+}
+
+/* Style the header */
+header {
+      padding: 15px;
+      text-align: left;
+      background: #13293d;
+      color: lightskyblue;
+}
+
+/* Style the navigation bar */
+nav {
+  padding: 20px;
+  margin: 50px;
+  border-style: solid;
+  border-color: blue;
+  text-align:right;
+  background: lightskyblue;
+}
+
+/* Set the display properties for the main content */
+main {
+    display: block;
+    flex-wrap: wrap;
+}
+
+/* Style the container */
+.container {
+  width: 100%;
+  height: auto;
+  background: #13293d;
+
+  /* Set the flex properties for the container */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+/* Style the box */
+.box {
+ width: 300px;
+ height: 300px;
+ margin: 20px;
+ box-sizing: border-box;
+ text-align: center;
+ background: whitesmoke;
+ font-size: 50px;
+ border-style: dotted;
+ border-width: 5px;
+}
+
+/* Style the footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    background: lightskyblue;
+    color: darkblue;
+    border-style: solid;
+    border-color: blue;   
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  /* Adjust the width of main, nav, and box elements for screens smaller than 1200px */
+  main,nav,
+  .box {
+    width: 40%;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* Adjust the width of main, nav, and box elements for screens smaller than 600px */
+    main,nav,
+    .box {
+        width: 90%;
+      }
+  }
+}
